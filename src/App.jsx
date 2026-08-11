@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { ChefHat } from 'lucide-react';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
