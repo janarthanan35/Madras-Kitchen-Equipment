@@ -13,45 +13,17 @@ const categories = [
   "Bakery & Sweets"
 ];
 
-const FALLBACK_IMAGE = "__COMING_SOON__";
-
-// Exact-match public domain / un-copyrighted high quality images for standard commercial equipment
-const realImageMap = {
-  "SS Work Table (4ft)": {
-    front: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800",
-    side: FALLBACK_IMAGE,
-    rear: FALLBACK_IMAGE,
-    top: FALLBACK_IMAGE,
-    detail: FALLBACK_IMAGE
-  },
-  "SS Work Table (6ft)": {
-    front: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800",
-    side: FALLBACK_IMAGE,
-    rear: FALLBACK_IMAGE,
-    top: FALLBACK_IMAGE,
-    detail: FALLBACK_IMAGE
-  },
-  "Visi Cooler 300L": {
-    front: "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&q=80&w=800",
-    side: FALLBACK_IMAGE,
-    rear: FALLBACK_IMAGE,
-    top: FALLBACK_IMAGE,
-    detail: FALLBACK_IMAGE
-  },
-  "Single Deck Baking Oven": {
-    front: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=800",
-    side: FALLBACK_IMAGE,
-    rear: FALLBACK_IMAGE,
-    top: FALLBACK_IMAGE,
-    detail: FALLBACK_IMAGE
-  },
-  "Planetary Mixer 20L": {
-    front: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80&w=800",
-    side: FALLBACK_IMAGE,
-    rear: FALLBACK_IMAGE,
-    top: FALLBACK_IMAGE,
-    detail: FALLBACK_IMAGE
-  }
+const categoryImagePlaceholders = {
+  "Dosa & Tawa Equipment": ["__IMG_DOSA_TAWA__", "__IMG_GAS_RANGE__"],
+  "Idli & Steaming Equipment": ["__IMG_IDLI_STEAMER__", "__IMG_RICE_BOILER__"],
+  "Grinding & Pulverizing": ["__IMG_WET_GRINDER__"],
+  "Boiling & Cooking": ["__IMG_RICE_BOILER__", "__IMG_DOSA_TAWA__"],
+  "Work Tables & Storage": ["__IMG_WORK_TABLE__"],
+  "Commercial Ranges": ["__IMG_GAS_RANGE__", "__IMG_TANDOOR_OVEN__"],
+  "Refrigeration": ["__IMG_VISI_COOLER__"],
+  "Display & Service": ["__IMG_BAIN_MARIE__"],
+  "Wash & Exhaust": ["__IMG_EXHAUST_HOOD__", "__IMG_WORK_TABLE__"],
+  "Bakery & Sweets": ["__IMG_BAKING_OVEN__", "__IMG_WET_GRINDER__"]
 };
 
 const products = [
@@ -82,7 +54,7 @@ const products = [
   // 3. Grinding & Pulverizing
   { name: "Tilting Wet Grinder 10L", category: 2, desc: "Commercial granite stone wet grinder with easy tilting mechanism." },
   { name: "Tilting Wet Grinder 20L", category: 2, desc: "20 Liter commercial wet grinder for continuous batter grinding." },
-  { name: "Tilting Wet Grinder 40L", category: 4, desc: "Heavy industrial 40 Liter granite wet grinder for high volume batter production." },
+  { name: "Tilting Wet Grinder 40L", category: 2, desc: "Heavy industrial 40 Liter granite wet grinder for high volume batter production." },
   { name: "Conventional Wet Grinder 15L", category: 2, desc: "Standard commercial upright stone wet grinder unit." },
   { name: "Potato Peeler 10kg", category: 2, desc: "Commercial abrasive drum potato and root vegetable peeling machine." },
   { name: "Potato Peeler 20kg", category: 2, desc: "Heavy-duty 20kg batch vegetable peeler for bulk preparation." },
@@ -177,31 +149,59 @@ const products = [
 ];
 
 const generatedData = products.map((p, i) => {
-  const images = realImageMap[p.name] || {
-    front: FALLBACK_IMAGE,
-    side: FALLBACK_IMAGE,
-    rear: FALLBACK_IMAGE,
-    top: FALLBACK_IMAGE,
-    detail: FALLBACK_IMAGE
-  };
+  const catName = categories[p.category];
+  const catImgs = categoryImagePlaceholders[catName] || ["__COMING_SOON__"];
+  const frontImg = catImgs[i % catImgs.length];
+  const sideImg = catImgs[(i + 1) % catImgs.length] || "__COMING_SOON__";
 
   return {
     id: i + 1,
     name: p.name,
-    category: categories[p.category],
+    category: catName,
     description: p.desc,
-    images: images,
-    price: null, // "Contact for Price"
-    specs: []   // "Contact us for specifications"
+    images: {
+      front: frontImg,
+      side: sideImg,
+      rear: "__COMING_SOON__",
+      top: "__COMING_SOON__",
+      detail: "__COMING_SOON__"
+    },
+    price: null,
+    specs: []
   };
 });
 
-let fileContent = 'import comingSoon from \'./assets/coming-soon.svg\';\n\n' +
+const importsHeader = `import comingSoon from './assets/coming-soon.svg';
+import imgDosaTawa from './assets/images/dosa-tawa.jpg';
+import imgIdliSteamer from './assets/images/idli-steamer.jpg';
+import imgWetGrinder from './assets/images/wet-grinder.jpg';
+import imgRiceBoiler from './assets/images/rice-boiler.jpg';
+import imgWorkTable from './assets/images/work-table.jpg';
+import imgGasRange from './assets/images/gas-range.jpg';
+import imgVisiCooler from './assets/images/visi-cooler.jpg';
+import imgBainMarie from './assets/images/bain-marie.jpg';
+import imgExhaustHood from './assets/images/exhaust-hood.jpg';
+import imgBakingOven from './assets/images/baking-oven.jpg';
+import imgTandoorOven from './assets/images/tandoor-oven.jpg';
+`;
+
+let fileContent = importsHeader + '\n' +
   'export const products = ' + JSON.stringify(generatedData, null, 2) + ';\n\n' +
   'export const categories = ' + JSON.stringify(categories, null, 2) + ';\n';
 
-fileContent = fileContent.replaceAll('"__COMING_SOON__"', 'comingSoon');
+fileContent = fileContent
+  .replaceAll('"__COMING_SOON__"', 'comingSoon')
+  .replaceAll('"__IMG_DOSA_TAWA__"', 'imgDosaTawa')
+  .replaceAll('"__IMG_IDLI_STEAMER__"', 'imgIdliSteamer')
+  .replaceAll('"__IMG_WET_GRINDER__"', 'imgWetGrinder')
+  .replaceAll('"__IMG_RICE_BOILER__"', 'imgRiceBoiler')
+  .replaceAll('"__IMG_WORK_TABLE__"', 'imgWorkTable')
+  .replaceAll('"__IMG_GAS_RANGE__"', 'imgGasRange')
+  .replaceAll('"__IMG_VISI_COOLER__"', 'imgVisiCooler')
+  .replaceAll('"__IMG_BAIN_MARIE__"', 'imgBainMarie')
+  .replaceAll('"__IMG_EXHAUST_HOOD__"', 'imgExhaustHood')
+  .replaceAll('"__IMG_BAKING_OVEN__"', 'imgBakingOven')
+  .replaceAll('"__IMG_TANDOOR_OVEN__"', 'imgTandoorOven');
 
 fs.writeFileSync('src/data.js', fileContent);
-console.log("data.js generated successfully with imported asset fallback!");
-
+console.log("data.js generated successfully with bundled local assets!");

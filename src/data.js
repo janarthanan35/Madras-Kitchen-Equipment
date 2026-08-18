@@ -1,4 +1,15 @@
 import comingSoon from './assets/coming-soon.svg';
+import imgDosaTawa from './assets/images/dosa-tawa.jpg';
+import imgIdliSteamer from './assets/images/idli-steamer.jpg';
+import imgWetGrinder from './assets/images/wet-grinder.jpg';
+import imgRiceBoiler from './assets/images/rice-boiler.jpg';
+import imgWorkTable from './assets/images/work-table.jpg';
+import imgGasRange from './assets/images/gas-range.jpg';
+import imgVisiCooler from './assets/images/visi-cooler.jpg';
+import imgBainMarie from './assets/images/bain-marie.jpg';
+import imgExhaustHood from './assets/images/exhaust-hood.jpg';
+import imgBakingOven from './assets/images/baking-oven.jpg';
+import imgTandoorOven from './assets/images/tandoor-oven.jpg';
 
 export const products = [
   {
@@ -7,8 +18,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Commercial heavy duty Dosa Tawa crafted for hotel and restaurant kitchens.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -22,8 +33,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Large 4ft commercial Dosa Tawa for high-volume morning breakfast service.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -37,8 +48,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Extra-large 5ft commercial Dosa Tawa for banquet and catering operations.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -52,8 +63,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Commercial Chapati puffer and roasting plate unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -67,8 +78,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Dedicated commercial round cast iron tawa for fast egg preparations.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -82,8 +93,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Shallow fry commercial tawa designed for fish and meat pan frying.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -97,8 +108,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Heavy gauge steel tawa designed specifically for South Indian Parotta making.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -112,8 +123,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Customized multi-burner gas range built for holding traditional Appam pans.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -127,8 +138,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Commercial multi-cavity cast iron pan unit for Kuzhi Paniyaram.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -142,8 +153,8 @@ export const products = [
     "category": "Dosa & Tawa Equipment",
     "description": "Heavy reinforced steel flat top cooking station for chopping Kothu Parotta.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -157,8 +168,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Commercial stainless steel Idli steaming chamber with 54-plate capacity.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgIdliSteamer,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -172,8 +183,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "High-capacity commercial Idli steamer for large restaurants and messes.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgIdliSteamer,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -187,8 +198,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Industrial scale Idli steamer cabinet for institutional catering.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgIdliSteamer,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -202,8 +213,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Heavy duty gas-operated steaming plant for bulk rice preparation.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgIdliSteamer,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -217,8 +228,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Commercial electric steamer unit for uniform rice cooking.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgIdliSteamer,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -232,8 +243,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Stainless steel multi-tier steamer unit for dim sums and momos.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgIdliSteamer,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -247,8 +258,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Multi-pipe steam attachment for commercial Kerala Puttu preparation.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgIdliSteamer,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -262,8 +273,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Tray-based commercial steaming unit designed for string hoppers / Idiyappam.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgIdliSteamer,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -277,8 +288,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Heavy duty stainless steel tray steamer for bulk snack production.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgIdliSteamer,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -292,8 +303,8 @@ export const products = [
     "category": "Idli & Steaming Equipment",
     "description": "Compact table-top steamer box for small eateries and tiffin centers.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgIdliSteamer,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -307,8 +318,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Commercial granite stone wet grinder with easy tilting mechanism.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -322,8 +333,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "20 Liter commercial wet grinder for continuous batter grinding.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -334,11 +345,11 @@ export const products = [
   {
     "id": 23,
     "name": "Tilting Wet Grinder 40L",
-    "category": "Work Tables & Storage",
+    "category": "Grinding & Pulverizing",
     "description": "Heavy industrial 40 Liter granite wet grinder for high volume batter production.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -352,8 +363,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Standard commercial upright stone wet grinder unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -367,8 +378,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Commercial abrasive drum potato and root vegetable peeling machine.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -382,8 +393,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Heavy-duty 20kg batch vegetable peeler for bulk preparation.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -397,8 +408,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Motorized dual-blade commercial coconut grater unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -412,8 +423,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Commercial stainless steel dry spice pulverizer machine.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -427,8 +438,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Heavy-duty high RPM commercial kitchen mixer grinder.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -442,8 +453,8 @@ export const products = [
     "category": "Grinding & Pulverizing",
     "description": "Continuous wet grinding machine for onion, tomato, and gravy pastes.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -457,8 +468,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Stainless steel double-jacketed steam rice boiling vessel.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -472,8 +483,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Industrial volume steam rice boiler kettle for mass feeding.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -487,8 +498,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Steam jacketed cooking kettle for Sambar, Rasam, and curries.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -502,8 +513,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Large capacity tilting liquid boiling vessel.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -517,8 +528,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Water-jacketed commercial milk boiling vessel to prevent scorching.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -532,8 +543,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Commercial electric hot water and beverage dispensing boiler.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -547,8 +558,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Easy-tilt cooking pan for gravies, stocks, and liquid foods.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -562,8 +573,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Heavy duty stock pot stove and kettle unit for soups and broth.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -577,8 +588,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Dedicated gas or electric steam boiler for kitchen equipment line.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgRiceBoiler,
+      "side": imgDosaTawa,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -592,8 +603,8 @@ export const products = [
     "category": "Boiling & Cooking",
     "description": "Traditional thick-bottom stainless steel vessel for dum cooking.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgDosaTawa,
+      "side": imgRiceBoiler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -607,8 +618,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Stainless steel food preparation table with under-shelf.",
     "images": {
-      "front": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800",
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -622,8 +633,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Heavy gauge stainless steel kitchen work table.",
     "images": {
-      "front": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800",
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -637,8 +648,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Integrated preparation table with built-in washing sink.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -652,8 +663,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Reinforced steel table fitted with commercial poly cutting board.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -667,8 +678,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Heavy sturdy work table designed for dough rolling and bakery prep.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -682,8 +693,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "4-tier stainless steel open storage shelving rack.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -697,8 +708,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Heavy duty tubular steel rack for drying large pots and pans.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -712,8 +723,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Space-saving wall-mounted stainless steel shelf.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -727,8 +738,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Perforated stainless steel ventilated storage bin for vegetables.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -742,8 +753,8 @@ export const products = [
     "category": "Work Tables & Storage",
     "description": "Stainless steel dish draining and storage rack.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -757,8 +768,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Heavy duty 2-burner commercial gas stove.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgTandoorOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -772,8 +783,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Commercial 3-burner gas cooking range.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgTandoorOven,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -787,8 +798,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "4-burner range with heavy cast iron pan supports.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgTandoorOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -802,8 +813,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "High pressure wok burner range with water wash channel.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgTandoorOven,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -817,8 +828,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Low-height heavy duty burner stove for stock pots.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgTandoorOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -832,8 +843,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Extra heavy cast iron gas range for large vessel cooking.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgTandoorOven,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -847,8 +858,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Stainless steel jacketed traditional clay tandoor oven.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgTandoorOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -862,8 +873,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Gas-fired commercial clay tandoor for naans and kebabs.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgTandoorOven,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -877,8 +888,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Vertical gas burner rotisserie for Shawarma.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgGasRange,
+      "side": imgTandoorOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -892,8 +903,8 @@ export const products = [
     "category": "Commercial Ranges",
     "description": "Overhead radiant heater for grilling, melting, and browning.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgTandoorOven,
+      "side": imgGasRange,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -907,8 +918,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Glass door display chiller for beverages and dairy.",
     "images": {
-      "front": "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&q=80&w=800",
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -922,8 +933,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Double door commercial glass display refrigerator.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -937,8 +948,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Under-counter refrigerated worktable unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -952,8 +963,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "3-door stainless steel under-counter chiller.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -967,8 +978,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Hard-top commercial deep freezer.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -982,8 +993,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Large storage commercial chest freezer.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -997,8 +1008,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Upright stainless steel commercial freezer.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1012,8 +1023,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Reach-in 4 door commercial storage chiller.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1027,8 +1038,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Refrigerated preparation counter with ingredient pan cutouts.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1042,8 +1053,8 @@ export const products = [
     "category": "Refrigeration",
     "description": "Commercial stainless steel chilled water dispenser.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgVisiCooler,
+      "side": imgVisiCooler,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1057,8 +1068,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Electric warm food display counter with GN pan inserts.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1072,8 +1083,8 @@ export const products = [
     "category": "Display & Service",
     "description": "6-pan hot food holding service counter.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1087,8 +1098,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Refrigerated curved glass showcase for sweet shops.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1102,8 +1113,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Glass display cabinet for cakes and pastries.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1117,8 +1128,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Customized stainless steel counter for street food preparation.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1132,8 +1143,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Stainless steel preparation counter with ice trough for juice bars.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1147,8 +1158,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Glass canopy scooping freezer for ice cream parlors.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1162,8 +1173,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Commercial heated popcorn popping unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1177,8 +1188,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Commercial rotating roller grill for sausages.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1192,8 +1203,8 @@ export const products = [
     "category": "Display & Service",
     "description": "Heated glass cabinet display for hot bakery items.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBainMarie,
+      "side": imgBainMarie,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1207,8 +1218,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Commercial deep bowl stainless steel washing sink.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgExhaustHood,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1222,8 +1233,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Two-compartment pot and dish washing sink.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgExhaustHood,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1237,8 +1248,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Pre-rinse sink fitted with overhead spray tap.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgExhaustHood,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1252,8 +1263,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "High-capacity pass-through hood dishwasher.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgExhaustHood,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1267,8 +1278,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Compact under-counter glass and dish washer.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgExhaustHood,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1282,8 +1293,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Stainless steel island exhaust canopy with baffle filters.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgExhaustHood,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1297,8 +1308,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Wall-mounted commercial kitchen ventilation hood.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgExhaustHood,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1312,8 +1323,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Commercial kitchen air supply and ventilation unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgExhaustHood,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1327,8 +1338,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Stainless steel under-sink grease interceptor unit.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgExhaustHood,
+      "side": imgWorkTable,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1342,8 +1353,8 @@ export const products = [
     "category": "Wash & Exhaust",
     "description": "Mobile stainless steel frame waste container.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWorkTable,
+      "side": imgExhaustHood,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1357,8 +1368,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Commercial gas/electric tray deck baking oven.",
     "images": {
-      "front": "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=800",
-      "side": comingSoon,
+      "front": imgBakingOven,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1372,8 +1383,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Two-deck commercial baking oven for bakeries.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgBakingOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1387,8 +1398,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Industrial rotating rack baking oven.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBakingOven,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1402,8 +1413,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Heavy duty spiral dough kneader for bread and pizza.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgBakingOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1417,8 +1428,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Multi-purpose commercial mixer for batter, cream, and dough.",
     "images": {
-      "front": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&q=80&w=800",
-      "side": comingSoon,
+      "front": imgBakingOven,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1432,8 +1443,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Floor-standing commercial pastry dough laminating sheeter.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgBakingOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1447,8 +1458,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Electric commercial loaf slicing machine.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBakingOven,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1462,8 +1473,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Continuous conveyor baking oven for pizza.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgBakingOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1477,8 +1488,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "Commercial cast iron waffle iron.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgBakingOven,
+      "side": imgWetGrinder,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
@@ -1492,8 +1503,8 @@ export const products = [
     "category": "Bakery & Sweets",
     "description": "High speed commercial bar and kitchen blender.",
     "images": {
-      "front": comingSoon,
-      "side": comingSoon,
+      "front": imgWetGrinder,
+      "side": imgBakingOven,
       "rear": comingSoon,
       "top": comingSoon,
       "detail": comingSoon
