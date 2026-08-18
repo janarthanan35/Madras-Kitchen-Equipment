@@ -26,6 +26,62 @@ const categoryImagePlaceholders = {
   "Bakery & Sweets": ["__IMG_BAKING_OVEN__", "__IMG_WET_GRINDER__"]
 };
 
+function getProductKeywords(name, catName, desc) {
+  const set = new Set();
+  
+  // Lowercase words from name & category
+  name.toLowerCase().split(/[\s/()]+/).filter(Boolean).forEach(w => set.add(w));
+  catName.toLowerCase().split(/[\s&/()]+/).filter(Boolean).forEach(w => set.add(w));
+
+  const lowerName = name.toLowerCase();
+
+  // Synonyms & related kitchen terms
+  if (lowerName.includes("dosa")) {
+    ["dosa", "dosa pan", "dosa plate", "tawa", "griddle", "flat top", "commercial dosa equipment", "cooking equipment"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("idli") || lowerName.includes("steamer") || lowerName.includes("steam")) {
+    ["idli", "idly", "idli equipment", "steamer", "steaming", "rice", "dhokla", "momo", "puttu", "idiyappam", "steam"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("chapati") || lowerName.includes("puffer")) {
+    ["chapati", "puffer", "roaster", "tawa", "flat top", "dosa pan"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("parotta")) {
+    ["parotta", "kothu", "kothu parotta", "tawa", "flat top"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("grinder") || lowerName.includes("pulverizer") || lowerName.includes("peeler") || lowerName.includes("mixer") || lowerName.includes("gravy")) {
+    ["grinder", "wet grinder", "tilting grinder", "batter", "pulverizer", "peeler", "potato peeler", "coconut scraper", "mixer", "mixer grinder", "gravy machine", "gravy master"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("boiler") || lowerName.includes("sambar") || lowerName.includes("rice") || lowerName.includes("soup") || lowerName.includes("dum") || lowerName.includes("milk") || lowerName.includes("tea")) {
+    ["boiler", "rice", "rice boiler", "sambar", "sambar boiler", "soup", "milk", "tea", "coffee", "biryani", "vessel", "dum", "cooking equipment"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("table") || lowerName.includes("rack") || lowerName.includes("shelf") || lowerName.includes("sink") || lowerName.includes("bin")) {
+    ["ss", "ss equipment", "stainless steel", "work table", "table", "sink", "storage", "rack", "shelf"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("burner") || lowerName.includes("range") || lowerName.includes("stove") || lowerName.includes("tandoor") || lowerName.includes("salamander") || lowerName.includes("shawarma")) {
+    ["stove", "commercial stove", "burner", "gas range", "tandoor", "charcoal tandoor", "gas tandoor", "shawarma", "cooking equipment"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("cooler") || lowerName.includes("chiller") || lowerName.includes("freezer") || lowerName.includes("refrigeration")) {
+    ["cooler", "chiller", "visi cooler", "freezer", "deep freezer", "chest freezer", "fridge", "refrigerator"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("bain marie") || lowerName.includes("display") || lowerName.includes("warmer") || lowerName.includes("counter") || lowerName.includes("showcase")) {
+    ["bain marie", "hot bain marie", "sweet display", "bakery display", "chaat counter", "warmer", "display counter", "food warmer"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("oven") || lowerName.includes("baking") || lowerName.includes("pizza") || lowerName.includes("blender") || lowerName.includes("waffle") || lowerName.includes("sheeter") || lowerName.includes("slicer")) {
+    ["oven", "baking oven", "deck oven", "rotary oven", "dough mixer", "pizza oven", "conveyor pizza oven", "waffle", "blender"].forEach(k => set.add(k));
+  }
+  if (lowerName.includes("fish fry") || lowerName.includes("fry")) {
+    ["deep fryer", "fryer", "fish fry", "tawa", "shallow fry"].forEach(k => set.add(k));
+  }
+
+  set.add("kitchen equipment");
+  if (lowerName.includes("ss") || catName.includes("Work Tables") || catName.includes("Wash")) {
+    set.add("ss equipment");
+    set.add("stainless steel");
+  }
+
+  return Array.from(set);
+}
+
 const products = [
   // 1. Dosa & Tawa Equipment
   { name: "Commercial Dosa Tawa 3ft", category: 0, desc: "Commercial heavy duty Dosa Tawa crafted for hotel and restaurant kitchens." },
@@ -153,12 +209,14 @@ const generatedData = products.map((p, i) => {
   const catImgs = categoryImagePlaceholders[catName] || ["__COMING_SOON__"];
   const frontImg = catImgs[i % catImgs.length];
   const sideImg = catImgs[(i + 1) % catImgs.length] || "__COMING_SOON__";
+  const keywords = getProductKeywords(p.name, catName, p.desc);
 
   return {
     id: i + 1,
     name: p.name,
     category: catName,
     description: p.desc,
+    keywords: keywords,
     images: {
       front: frontImg,
       side: sideImg,
@@ -204,4 +262,4 @@ fileContent = fileContent
   .replaceAll('"__IMG_TANDOOR_OVEN__"', 'imgTandoorOven');
 
 fs.writeFileSync('src/data.js', fileContent);
-console.log("data.js generated successfully with bundled local assets!");
+console.log("data.js generated successfully with keywords and bundled local assets!");
