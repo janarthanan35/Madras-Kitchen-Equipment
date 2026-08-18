@@ -13,7 +13,7 @@ const categories = [
   "Bakery & Sweets"
 ];
 
-const FALLBACK_IMAGE = "/images/coming-soon.svg";
+const FALLBACK_IMAGE = "__COMING_SOON__";
 
 // Exact-match public domain / un-copyrighted high quality images for standard commercial equipment
 const realImageMap = {
@@ -196,6 +196,12 @@ const generatedData = products.map((p, i) => {
   };
 });
 
-const fileContent = 'export const products = ' + JSON.stringify(generatedData, null, 2) + ';\n\nexport const categories = ' + JSON.stringify(categories, null, 2) + ';\n';
+let fileContent = 'import comingSoon from \'./assets/coming-soon.svg\';\n\n' +
+  'export const products = ' + JSON.stringify(generatedData, null, 2) + ';\n\n' +
+  'export const categories = ' + JSON.stringify(categories, null, 2) + ';\n';
+
+fileContent = fileContent.replaceAll('"__COMING_SOON__"', 'comingSoon');
+
 fs.writeFileSync('src/data.js', fileContent);
-console.log("data.js generated successfully without fake SVGs, fake prices, or fake specs!");
+console.log("data.js generated successfully with imported asset fallback!");
+

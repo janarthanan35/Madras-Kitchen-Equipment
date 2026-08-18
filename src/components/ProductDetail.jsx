@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ShoppingCart, Truck, ShieldCheck, ZoomIn, FileText } from 'lucide-react';
 import { products } from '../data';
+import comingSoon from '../assets/coming-soon.svg';
 
-const FALLBACK_IMAGE = "/images/coming-soon.svg";
+const FALLBACK_IMAGE = comingSoon;
 
 const ProductDetail = () => {
   const { id } = useParams();

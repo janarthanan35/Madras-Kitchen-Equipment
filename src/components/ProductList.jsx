@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { products, categories } from '../data';
+import comingSoon from '../assets/coming-soon.svg';
 
-const FALLBACK_IMAGE = "/images/coming-soon.svg";
+const FALLBACK_IMAGE = comingSoon;
 
 const ProductList = () => {
   const [activeCategory, setActiveCategory] = useState('All');
