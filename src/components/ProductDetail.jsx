@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, ShoppingCart, Truck, ShieldCheck, ZoomIn, FileText } from 'lucide-react';
+import { ArrowLeft, ShoppingCart, Truck, ShieldCheck, ZoomIn, FileText, PhoneCall } from 'lucide-react';
 import { products } from '../data';
 import comingSoon from '../assets/coming-soon.svg';
 
 const FALLBACK_IMAGE = comingSoon;
 
-const ProductDetail = () => {
+const ProductDetail = ({ onOpenContact }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const product = products.find(p => p.id === parseInt(id));
@@ -116,9 +116,20 @@ const ProductDetail = () => {
             {product.description}
           </p>
 
-          <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
-            <button className="btn" style={{ padding: '1rem 2rem', fontSize: '1rem', flex: 1 }}>
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+            <button 
+              className="btn" 
+              style={{ padding: '1rem 2rem', fontSize: '1rem', flex: 1, minWidth: '220px' }}
+              onClick={() => onOpenContact && onOpenContact(product)}
+            >
               <ShoppingCart size={20} /> Request Price Quote
+            </button>
+            <button 
+              className="btn btn-secondary" 
+              style={{ padding: '1rem 1.5rem' }} 
+              onClick={() => onOpenContact && onOpenContact(product)}
+            >
+              <PhoneCall size={20} /> Contact Seller
             </button>
             <button className="btn btn-secondary" style={{ padding: '1rem' }} onClick={() => navigate('/')}>
               <ArrowLeft size={20} />
@@ -145,18 +156,23 @@ const ProductDetail = () => {
               ))}
             </div>
           ) : (
-            <div style={{
-              background: '#f8fafc',
-              border: '1px dashed var(--border-color)',
-              padding: '1.5rem',
-              borderRadius: '12px',
-              color: 'var(--text-muted)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '12px'
-            }}>
+            <div 
+              onClick={() => onOpenContact && onOpenContact(product)}
+              style={{
+                background: '#f8fafc',
+                border: '1px dashed var(--border-color)',
+                padding: '1.5rem',
+                borderRadius: '12px',
+                color: 'var(--text-muted)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+            >
               <FileText size={20} color="var(--primary)" />
-              <span>Contact us for specifications</span>
+              <span>Contact us for specifications (Click to inquire)</span>
             </div>
           )}
         </div>
